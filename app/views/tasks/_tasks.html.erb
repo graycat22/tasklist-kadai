@@ -2,6 +2,7 @@
   <ul>
     <% tasks.each do |task| %>
       <li>
+        <p><%= link_to task.user.name, task %></p>
         <p><%= link_to task.status, task %></p>
         <p><%= link_to task.content, task %></p>
       </li>
